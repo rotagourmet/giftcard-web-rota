@@ -1,0 +1,61 @@
+.msg-btn{
+    font-size: 22px;
+    font-weight: 800;
+    padding: 18px 70px;
+    background-color: #FFBC00;
+    border-color: #FFBC00;
+    color: #fff;
+    border-radius: 50px;
+    letter-spacing: 0.05rem;
+    box-shadow: initial !important;
+    border: none !important;
+}
+
+.img-rota{
+    height: 225px;
+}
+
+.logo-size-custom-register {
+    height: 55px;
+    margin-bottom: 30px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .img-rota{
+        height: 125px;
+    }
+    .msg-btn{
+        font-size: 16px !important;
+        font-weight: 800;
+        padding: 18px 25px !important;
+    }
+    /* Styles */
+    .cupom-field{
+        padding-left: 22px;
+        font-size: 25px !important;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+}
+    
+
+.btn-loja-virtual{
+    height: 40px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+
+.cupom-field{
+    padding-left: 26px;
+    font-size: 30px !important;
+    width: 100%;
+    letter-spacing: 16px;
+    text-transform: uppercase
+}
