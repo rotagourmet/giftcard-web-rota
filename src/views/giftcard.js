@@ -126,32 +126,18 @@ export default class Register extends Component {
 				 <Modal isOpen={this.state.modal} toggle={() => this.setState({modal: false})} centered >
 					<ModalBody>
 						<div className="d-flex flex-column align-items-center justify-content-center p-2 animate__animated animate__bounce">
-						<h5 className="p-4" style={{fontSize: 22,fontWeight: "700", textAlign: "center"}}> {this.state.modalTitle}</h5>
-						<p className="text-center pb-3" style={{fontWeight: "300", textAlign: "center"}}> {this.state.modalMessage}</p>
+							<h5 className="p-4" style={{fontSize: 22,fontWeight: "700", textAlign: "center"}}> {this.state.modalTitle}</h5>
+							<p className="text-center pb-3" style={{fontWeight: "300", textAlign: "center"}}> {this.state.modalMessage}</p>
 
-						<p className="text-center " style={{fontWeight: "300"}}> Escolha sua loja virtual</p>
-						<div className="d-flex align-items-center justify-content-center mb-5" >
-							<div className="cursor-pointer mr-2" onClick={()=> window.open("https://apps.apple.com/br/app/clube-rota-gourmet/id1420293322")} >
-								<img alt="apple" className="btn-loja-virtual" src="/assets/payment/applestore.png" />
+							<p className="text-center " style={{fontWeight: "300"}}> Escolha sua loja virtual</p>
+							<div className="d-flex align-items-center justify-content-center mb-5" >
+								<div className="cursor-pointer mr-2" onClick={()=> window.open("https://apps.apple.com/br/app/clube-rota-gourmet/id1420293322")} >
+									<img alt="apple" className="btn-loja-virtual" src="/assets/payment/applestore.png" />
+								</div>
+								<div className="cursor-pointer ml-2" onClick={()=> window.open("https://play.google.com/store/apps/details?id=br.com.approtagourmet")} >
+									<img alt="google" className="btn-loja-virtual" src="/assets/payment/googleplay.png"/>
+								</div>
 							</div>
-							<div className="cursor-pointer ml-2" onClick={()=> window.open("https://play.google.com/store/apps/details?id=br.com.approtagourmet")} >
-								<img alt="google" className="btn-loja-virtual" src="/assets/payment/googleplay.png"/>
-							</div>
-						</div>
-
-						<Button
-							color="primary"
-							size="lg" 
-							className={`w-80 btn-shadow btn-multiple-state ${this.state.loading ? "show-spinner" : ""}`} 
-							onClick={() => this.setState({modal: false})}
-						>
-							<span className="spinner d-inline-block">
-								<span className="bounce1" />
-								<span className="bounce2" />
-								<span className="bounce3" />
-							</span>
-							<span className="label">OK</span>
-						</Button>{' '}
 						</div>
 					</ModalBody>
 					</Modal>
